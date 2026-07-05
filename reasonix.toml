@@ -1,0 +1,2 @@
+[permissions]
+allow = ["Bash(cd \"C:\\Users\\Administrator\\Desktop\\pdf2img\" && python scripts/generate-icons.py)", "Bash(cd \"C:\\Users\\Administrator\\Desktop\\pdf2img\" && git remote -v 2>/dev/null; git branch 2>/dev/null; echo \"---\"; ls -la .git 2>/dev/null || echo \"no .git dir\")"]

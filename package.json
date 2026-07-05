@@ -1,0 +1,41 @@
+{
+  "name": "invoiceforge",
+  "version": "1.0.0",
+  "description": "InvoiceForge - offline-first invoice and document utilities.",
+  "private": true,
+  "scripts": {
+    "sync:pdfjs": "node scripts/sync-pdfjs-assets.mjs",
+    "dev": "npm run sync:pdfjs && vite --host 0.0.0.0",
+    "build": "npm run sync:pdfjs && vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "vue-tsc --noEmit",
+    "test:ui": "playwright test"
+  },
+  "keywords": [
+    "pdf",
+    "png",
+    "invoice",
+    "offline",
+    "pwa"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "lucide-vue-next": "^0.577.0",
+    "pdfjs-dist": "^6.1.200",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.39",
+    "vue-i18n": "^11.4.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^8.1.0",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "playwright": "^1.61.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.3",
+    "vite-plugin-pwa": "^1.3.0",
+    "vue-tsc": "^3.3.6"
+  }
+}
